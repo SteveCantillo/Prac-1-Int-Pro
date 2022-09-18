@@ -31,3 +31,5 @@ public class Main {
         JOptionPane.showInputDialog(null,"Mi nombres es :" +nombre+ " y mi salari"
                 + "o semanal es de " +salario_s+ " El salario mensual bruto es de:"
                         +salario_m+ " y mi salario neto es de: "+salario_f);
+                        
+                        Hola como estan
