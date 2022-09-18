@@ -1,0 +1,33 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package prac.pkg1.intro;
+   import javax.swing.JOptionPane;    
+/**
+ *
+ * @author daval
+ */
+public class Main {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+       
+        String nombre;
+        float salario_s;
+        float deduccion;
+        int semanas;
+        float salario_f;
+        nombre = JOptionPane.showInputDialog("Digite su nombre");
+        salario_s = Float.parseFloat(JOptionPane.showInputDialog("Digite su sala"
+                + "rio semana;"));
+        semanas = Integer.parseInt(JOptionPane.showInputDialog("Digite cuantas s"
+                + "emanas trabajo esta semana"));
+        float salario_m= salario_s*semanas;
+        deduccion = (float) (salario_m * 0.093);
+        salario_f =(salario_m - deduccion);
+        JOptionPane.showInputDialog(null,"Mi nombres es :" +nombre+ " y mi salari"
+                + "o semanal es de " +salario_s+ " El salario mensual bruto es de:"
+                        +salario_m+ " y mi salario neto es de: "+salario_f);
